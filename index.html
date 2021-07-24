@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/base.css">
+    <title>犬</title>
+</head>
+<body>
+    <header>
+        <h1 id="top" class="text-center">犬について</h1>
+    </header>
+
+    <div class = parent>
+        <div>
+            <h2>・犬の平均寿命について</h2>
+            <p>ボタンを押すと平均寿命がわかるよ</p>
+            <button id=dog_bb type="button" onclick="dog_size(1)">超小型犬（～5kg）</button>
+            <button id=dog_bb type="button" onclick="dog_size(2)">小型犬(6kg～9kg) </button>
+            <button id=dog_bb type="button" onclick="dog_size(3)">中～大型犬(10kg～)</button>
+        </div>
+        
+        <div id=back>
+            <h2>・犬の年齢換算</h2>
+            
+            <table>
+
+                <tr>
+                    <th>犬</th>
+                    <th>人間</th>
+                    <th>ライフステージ</th>
+                </tr>
+                <tr>
+                    <td>1か月</td>
+                    <td>1歳</td>
+                    <td rowspan="5">子犬</td>
+                </tr>
+                <tr>
+                    <td>2か月</td>
+                    <td>3歳</td>
+                </tr>
+                <tr>
+                    <td>3か月</td>
+                    <td>5歳</td>
+                </tr>
+                <tr>
+                    <td>6か月</td>
+                    <td>9歳</td>
+                </tr>
+                <tr>
+                    <td>9か月</td>
+                    <td>13歳</td>
+                </tr>
+                <tr>
+                    <td>1年</td>
+                    <td>16歳</td>
+                    <td rowspan="7">成犬</td>
+                </tr>
+                <tr>
+                    <td>1年半</td>
+                    <td>20歳</td>
+                </tr>
+                <tr>
+                    <td>2年</td>
+                    <td>24歳</td>
+                </tr>
+                <tr>
+                    <td>3年</td>
+                    <td>28歳</td>
+                </tr>
+                <tr>
+                    <td>4年</td>
+                    <td>32歳</td>
+                </tr>
+                <tr>
+                    <td>5年</td>
+                    <td>36歳</td>
+                </tr>
+                <tr>
+                    <td>6年</td>
+                    <td>40歳</td>
+                </tr>
+                <tr>
+                    <td>7年</td>
+                    <td>44歳</td>
+                    <td rowspan="15">高齢犬</td>
+                </tr>
+                <tr>
+                    <td>8年</td>
+                    <td>48歳</td>
+                </tr>
+                <tr>
+                    <td>9年</td>
+                    <td>52歳</td>
+                </tr>
+                <tr>
+                    <td>10年</td>
+                    <td>56歳</td>
+                </tr>
+                <tr>
+                    <td>11年</td>
+                    <td>60歳</td>
+                </tr>
+                <tr>
+                    <td>12年</td>
+                    <td>64歳</td>
+                </tr>
+                <tr>
+                    <td>13年</td>
+                    <td>68歳</td>
+                </tr>
+                <tr>
+                    <td>14年</td>
+                    <td>72歳</td>
+                </tr>
+                <tr>
+                    <td>15年</td>
+                    <td>76歳</td>
+                </tr>
+                <tr>
+                    <td>16年</td>
+                    <td>80歳</td>
+                </tr>
+                <tr>
+                    <td>17年</td>
+                    <td>84歳</td>
+                </tr>
+                <tr>
+                    <td>18年</td>
+                    <td>88歳</td>
+                </tr>
+                <tr>
+                    <td>19年</td>
+                    <td>92歳</td>
+                </tr>
+                <tr>
+                    <td>20年</td>
+                    <td>96歳</td>
+                </tr>
+                <tr>
+                    <td>21年</td>
+                    <td>100歳</td>
+                </tr>
+                
+            </table>
+        </div>
+        
+        <div>
+            <h2>・犬種ランキング</h2>
+            <ol>
+                <li>トイプードル</li><img src="img/toipudoru.jpg" alt="トイプードル" width="300"/>
+                <li>チワワ</li><img src="img/tiwawa.jpg" alt="チワワ" width="300"/>
+                <li>ロングコートチワワ</li><img src="img/ronngukototiwawa.jpg" alt="ロングコートチワワ" width="300"/>
+                <li>タイニープードル</li><img src="img/tainipudoru.jpg" alt="タイニープードル" width="300"/>
+                <li>フレンチブルドッグ</li> <img src="img/hurenntiburudoggu.jpg" alt="フレンチブルドッグ" width="300"/>
+            </ol>
+        </div>
+
+        <div id=back>
+            <h2>・それぞれの犬種について紹介</h2>
+            <p>気になる犬種のボタンを押してね</p>
+            <button id=dog_b type="button" onclick="dog1()">トイプードル</button>
+            <p style="display: none;" id="dog1">・超小型犬であり、健全性の維持と犬種固定のために体重規定は厳しく定められており、500ｇ未満のものや3kg超の場合は繁殖犬として失格とされています。トイプードルは体長と体高がほぼ同じのスクエアな構成で、独特のカールを持つ被毛に覆われています。
+                プードルは日本ではジャパンケネルクラブの犬種標準で4つのサイズに分類されており、トイプードルは体高では24～28cmが標準であると規定されています。</p>
+            
+
+            <button id="dog_b" type="button" onclick="dog2()">チワワ</button>
+            <p style="display: none;" id="dog2">・チワワは手足は細いものの胴体と頭蓋骨はがっちりとしています。体高より体長がわずかに長い、立ち耳の超小型犬です。
+                頭蓋骨はアップルヘッドが良いとされており、理想体重は1.5～3kgの間とされています。</p>
+            
+
+            <button id=dog_b type="button" onclick="dog3()">ロングコートチワワ</button>
+            <p style="display: none;" id="dog3">・ロングコートチワワは体高より体長がわずかに長い、立ち耳の超小型犬です。
+            頭蓋骨は丸い形のアップルヘッドが好ましく、胴体はしっかりしています。
+            手足は細く、理想体重は1.5～3kgの間とされています。ロングコートチワワは、床に引きずらない程度の長さのしなやかな長毛で覆われ、腕や頭部、しっぽに飾り毛があります。</p>
+            
+            
+            <button id=dog_b type="button" onclick="dog4()">タイニープードル</button>
+            <p style="display: none;" id="dog4">・トイプードルは体長と体高がほぼ同じのスクエアな構成で、独特のカールを持つ被毛に覆われているとされていますので、タイニープードルも同じと考えてよいでしょう。
+                公式な標準サイズはありませんが、トイプードルとティーカッププードルの中間程度のサイズとされる場合が多いようで、体高で27～23cm程度、体重2～3kgとしているブリーダーが多いようです。
+                なお、タイニープードルは標準サイズを満たしているトイプードル同士の交配から生まれることもあり、成長の過程でトイプードルサイズに戻ってしまうこともあるようです。</p>
+            
+            
+            <button id=dog_b type="button" onclick="dog5()">フレンチブルドッグ</button>
+            <p style="display: none;" id="dog5">・フレンチブルドッグは、大きな頭と耳を持っていて、しっぽは短く、四肢と胴体は筋肉質でがっちりとしています。
+                短毛で全身が覆われています。
+                体重は8～14kgが理想とされていますが、体高は体重とのバランスで規定されているようです。
+                手足、胴体ともに短く構成されていることが大切です。</p>
+        
+        </div>
+      </div>
+      
+      
+        <div id="back2">
+            <h2>お問い合わせ</h2>
+            <form action="#" method="POST">
+                <!-- 一般的なテキストフィールド -->
+                <div>
+                    <label for="last-name">姓：</label>
+                    <input type="text" name="lastname" id="last-name" placeholder="ここには姓を入れてね" required>
+                    
+                    <label>
+                        名：
+                        <input type="text" name="firstname">
+                    </label>
+                </div>
+
+                <!-- パスワード -->
+                <div>
+                    <label>
+                        パスワード：
+                        <input type="password" name="password">
+                    </label>
+                </div>
+
+                <!-- チェックボックス -->
+                <div>
+                    <input type="checkbox" name="agreement" id="agreement" checked>
+                    <label for="agreement">プライバシーポリシーに同意する</label>
+                </div>
+
+                <!-- ラジオボタン -->
+                <!-- nameにはラジオボタンのグループ名を指定する． -->
+                <!-- value属性の値がサーバに送信される -->
+                <label>
+                    <input type="radio" name="sex" value="male">
+                    男性
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="female">
+                    女性
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="other">
+                    その他
+                </label>
+
+                <!-- 複数行にわたるテキスト入力フィールド -->
+                <div>
+                    <label for="requests">要望：</label>
+                    <textarea name="requests" id="requests" cols="30" rows="10"></textarea>
+                </div>
+
+                <!-- 日付 -->
+                <div>
+                    <label for="birthday">誕生日：</label>
+                    <input type="date" name="birthday" id="birthday">
+                </div>
+
+                <!-- 色 -->
+                <div>
+                    <label>
+                        好きな色：
+                        <input type="color">
+                    </label>
+                </div>
+
+                <!-- 電話番号 -->
+                <div>
+                    <label>
+                        電話番号：
+                        <input type="tel">
+                    </label>
+                </div>
+
+                <!-- メールアドレス -->
+                <div>
+                    <label>
+                        メールアドレス：
+                        <input type="email">
+                    </label>
+                </div>
+
+                <!-- ファイル -->
+                <div>
+                    <label>
+                        添付ファイル：
+                        <input type="file">
+                    </label>
+                </div>
+                
+                <!-- データを送信するボタン -->
+                <div>
+                    <input type="submit" value="送信する">
+                    <input type="reset" value="リセット">
+                </div>
+
+            </form>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
+        <script src="js/sample.js"></script>
+
+        <script src="js/jQuery.js"></script>
+    
+        
+</body>
+</html>
